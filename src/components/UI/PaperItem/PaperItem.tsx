@@ -15,10 +15,10 @@ const PaperStyled = styled(Paper)`
 
 const PaperItem = ({ title, children }: PaperItemProps) => (
 	<PaperStyled>
-		<Typography variant="h5" component="h3">
+		<Typography variant="h5">
 			{title}
 		</Typography>
-		<Typography component="p" dangerouslySetInnerHTML={{ __html: children.toString() }} />
+		<div dangerouslySetInnerHTML={{ __html: children.toString() }} />
 	</PaperStyled>
 )
 
